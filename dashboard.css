@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color: white;
+  font-family: 'Heebo', Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: rgb(0, 117, 190);
+    color: white;
+    padding-bottom: 50px;
+}
+header img{
+  margin-left: -8px;
+}
+main{
+    position: relative;
+}
+.quick-action-con{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.quick-actions-con{
+  background-color: whitesmoke;
+  border-radius: 8px;
+  /* position: relative; */
+  width: 100%;
+  margin-top: -45px;
+  z-index: 100;
+
+}
+.bi-chat-left{
+    z-index: 1;
+    position: absolute;
+    right: 68px;
+    top: 25px;
+}
+.chat-right{
+  right: 65px;
+  position: absolute;
+  z-index: 2;
+  top: 18px;
+}
+.quick-actions .actions{
+  font-size: .6rem;
+  font-weight: 700;
+}
+.caret-down-fill{
+    border: 0;
+  background-color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: -20px;
+}
+.bi-caret-down-fill{
+    position: absolute;
+  background-color: white;
+  right: 15px;
+}
+.bg-mark{
+  height: 3px;
+  background-color: rgb(0, 117, 190)  ;
+  width: 40px;
+  border-radius: 10px;
+}
+
+.savings i{
+  font-size: 1.5rem;
+  border: 1px solid rgb(99, 193, 224);
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 117, 190);
+  
+}
+.goal-percent p {
+  margin: 0;
+  padding: 0;
+}
+.percent-con{
+  border: 1px solid gray;
+  width: 300px;
+  height: 8px;
+  border-radius: 8px;
+  margin-left: .5em;
+  padding-left: .8px;
+}
+
+.percentage-towards-goal{
+  background-color: rgb(22, 253, 168);
+  width: 225px;
+  height: 100%;
+}
+.goal-percent .fs{
+  font-size: 0.65rem;
+  text-align: center;
+  font-weight: 500;
+  color: gray;
+}
+.money-saved{
+  font-size: .75rem;
+  text-align: end;
+  color: rgb(0, 117, 190);
+}
+.savings-container{
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.nav-bottom{
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.nav-bottom span{
+  font-size: .7rem;
+  font-weight: 500;
+}
+.greeting{
+  color: gainsboro;
+}
+.date{
+  font-size: .7rem;
+  font-weight: 500;
+  padding-top: 0.3em;
+}
+.quick-action{
+  font-size: .9rem;
+  color: rgb(232, 229, 229);
+  font-weight: 400;
+}
+.quick-actions i{
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.quick-actions{
+  font-size: 9rem;
+  font-weight: 500;
+}
+.zelle{
+  height: 20px;
+  margin-top: -5px;
+}

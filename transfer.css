@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+  width: 100%;
+  max-width: 390px;
+  min-height: 100vh;
+  margin: auto;
+}
+.d-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.transfer-failed{
+    background-color:rgb(6, 154, 246);
+    width: 100%;
+    text-align: center;
+    padding: 2.8em;
+
+}
+.transfer-failed i{
+    font-size: 2.8rem;
+    color: white;
+    background-color: rgb(255, 78, 14);
+    border-radius: 50%;
+    padding: 12px 15px;
+
+
+}
+.transfer-failed p{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+    margin-top: 1.3em;
+}
+.info{
+    text-align: center;
+    padding: 1em;
+    font-size: .8rem;
+    font-weight: 600;
+    background-color: azure;
+    width: 100%;
+    color: rgb(33, 33, 33);
+}
+.transaction-details{
+    padding: 1.2em;
+}
+.lists{
+    display: flex;
+}
+.lists ul{
+  list-style:none;
+  text-align: right;
+}
+.lists li,.lists strong{
+    margin-bottom: .5em;
+}
+
+.lists div{
+    display: flex;
+    flex-direction: column;
+}
+.lists strong{
+    margin-left: 1em;
+}
+.option-btn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+.option-btn button{
+    padding: 12px;
+    border-radius: 25px;
+    margin-bottom: 0.3em;
+    font-size: .85rem;
+    font-weight: 600;
+    border: 1.5px solid turquoise;
+    color: turquoise;
+    background-color: transparent;
+}
