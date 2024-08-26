@@ -13,7 +13,7 @@ header{
     padding-bottom: 50px;
 }
 header img{
-  margin-left: -8px;
+  margin-left: -16px;
 }
 main{
     position: relative;
@@ -37,13 +37,13 @@ main{
     z-index: 1;
     position: absolute;
     right: 68px;
-    top: 25px;
+    top: 30px;
 }
 .chat-right{
   right: 65px;
   position: absolute;
   z-index: 2;
-  top: 18px;
+  top: 22px;
 }
 .quick-actions .actions{
   font-size: .6rem;
@@ -60,7 +60,6 @@ main{
 }
 .bi-caret-down-fill{
     position: absolute;
-  background-color: white;
   right: 15px;
 }
 .bg-mark{
@@ -69,18 +68,66 @@ main{
   width: 40px;
   border-radius: 10px;
 }
-
-.savings i{
-  font-size: 1.5rem;
-  border: 1px solid rgb(99, 193, 224);
-  border-radius: 50%;
-  height: 35px;
-  width: 35px;
-  display: flex;
-  justify-content: center;
+.box {
+  --r:50px; /* radius*/
+  --g:18px; /* gap */
+  
+  width:40px;
+  height:40px;
+  display:flex;
   align-items: center;
+  justify-content: center;
+  box-sizing:border-box;
+  position:relative;
+  /* margin:10px; */
+}
+ 
+.box:before {
+  content:"";
+  position:absolute;
+  inset:0;
+  border:3px solid rgb(20, 89, 153);
+  border-radius:var(--r);
+  --m:#0000 90deg,#000 0; 
+  -webkit-mask:
+    conic-gradient(from -180deg at calc(100% - var(--g)) var(--g)            ,var(--m))
+        0    100%/var(--r) var(--r),
+    conic-gradient(from  90deg at var(--g)              var(--g)             ,var(--m))
+        100% 100%/var(--r) var(--r),
+    conic-gradient(from   0deg at var(--g)              calc(100% - var(--g)),var(--m))
+        100% 0   /var(--r) var(--r),
+    conic-gradient(from -90deg at calc(100% - var(--g)) calc(100% - var(--g)),var(--m))
+        0    0   /var(--r) var(--r),
+    linear-gradient(#000 0 0);
+   -webkit-mask-repeat:no-repeat;
+   -webkit-mask-composite:xor;
+   mask-composite:exclude;
+}
+
+.savings-con{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(158, 210, 227);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.savings-con .bi-piggy-bank{
+  font-size: 1.3rem;
   color: rgb(0, 117, 190);
   
+}
+.savings-con .bi-currency-dollar{
+   font-size: .5rem;
+   position: absolute;
+   right: 9px;
+   bottom: 5px;
+}
+.goal-percent{
+  flex: 1;
 }
 .goal-percent p {
   margin: 0;
@@ -88,7 +135,6 @@ main{
 }
 .percent-con{
   border: 1px solid gray;
-  width: 300px;
   height: 8px;
   border-radius: 8px;
   margin-left: .5em;
@@ -97,7 +143,7 @@ main{
 
 .percentage-towards-goal{
   background-color: rgb(22, 253, 168);
-  width: 225px;
+  width: 75%;
   height: 100%;
 }
 .goal-percent .fs{
