@@ -5,7 +5,7 @@
 }
 .top{
     background-color: rgb(0, 117, 190);
-    height: 8px;
+    height: 10px;
 }
 strong{
     font-weight: 700;
@@ -63,12 +63,12 @@ strong{
   }
   .bottom{
     padding-top: 1.5em;
-    height: 22vh;
-    position: relative;
+/*     height: 22vh; */
+/*     position: relative; */
   }
   .send-money-btn{
     position: absolute;
-    bottom: 5px;
+    bottom: 20px;
     background-color: rgb(0, 117, 190);
     color: white;
     border-radius: 25px;
