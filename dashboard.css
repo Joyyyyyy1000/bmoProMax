@@ -21,10 +21,7 @@ header nav{
 main{
     position: relative;
 }
-.quick-action{
-    font-weight: 400;
-    font-size:.7rem;
-}
+
 .quick-action-con{
   display: flex;
   align-items: center;
@@ -187,7 +184,7 @@ main{
   padding-top: 0.3em;
 }
 .quick-action{
-  font-size: .9rem;
+  font-size: .7rem;
   color: rgb(232, 229, 229);
   font-weight: 400;
 }
