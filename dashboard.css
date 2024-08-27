@@ -24,7 +24,6 @@ main{
 .quick-action{
     font-weight: 400;
     font-size:.7rem;
-    margin-top:1em;
 }
 .quick-action-con{
   display: flex;
