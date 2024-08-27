@@ -37,13 +37,13 @@ main{
     z-index: 1;
     position: absolute;
     right: 68px;
-    top: 30px;
+    top: 60px;
 }
 .chat-right{
   right: 65px;
   position: absolute;
   z-index: 2;
-  top: 22px;
+  top: 52px;
 }
 .quick-actions .actions{
   font-size: .6rem;
