@@ -177,8 +177,6 @@ main{
 }
 .greeting{
   color: gainsboro;
-  font-size:1.2rem;
-  font-weight:200;
 }
 .date{
   font-size: .7rem;
@@ -187,7 +185,7 @@ main{
 }
 .clock{
   font-weight: 600;
-  font-size: .9rem;
+  font-size: 1rem;
   margin-bottom:0;
   margin-top:0;
 }
