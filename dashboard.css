@@ -183,6 +183,13 @@ main{
   font-weight: 500;
   padding-top: 0.3em;
 }
+.clock{
+  font-weight: 600;
+  font-size: .8rem;
+}
+.network{
+  font-size: 1rem;
+}
 .quick-action{
   font-size: .7rem;
   color: rgb(232, 229, 229);
