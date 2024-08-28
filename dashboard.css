@@ -200,6 +200,8 @@ main{
   font-size: .7rem;
   color: rgb(232, 229, 229);
   font-weight: 400;
+    position:absolute;
+    bottom:15px
 }
 .quick-actions i{
   font-weight: 600;
