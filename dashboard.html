@@ -33,11 +33,11 @@
             </div>
         </nav>
         <p id="greeting" class="greeting fs-3 fw-lighter m-0">
-            Good morning, <span class="text-white fw-bold">Monalisa</span>
+            <span class="text-white fw-bold">Monalisa</span>
         </p>
         <div class="d-flex align-items-start mt-2">
             <i class="bi bi-calendar4 fs-5 fw-semibold"></i>
-        <span class="ms-1 date">Today is Monday, August 26 2024</span>
+        <span class="ms-1 date">Today is Wednesday, August 28 2024</span>
         </div>
         <p class="quick-action">QUICK ACTIONS</p>
     </header>
@@ -162,11 +162,11 @@
         const hours = now.getHours();
 
         if (hours < 12) {
-            greeting.textContent = 'Good Morning!';
+            greeting.textContent = 'Good morning, ';
         } else if (hours < 18) {
-            greeting.textContent = 'Good Afternoon!';
+            greeting.textContent = 'Good afternoon, ';
         } else {
-            greeting.textContent = 'Good Evening!';
+            greeting.textContent = 'Good evening, ';
         }
     }
 
