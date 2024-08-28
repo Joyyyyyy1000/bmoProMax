@@ -185,7 +185,7 @@ main{
 }
 .clock{
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom:0;
   margin-top:0;
 }
@@ -194,7 +194,7 @@ main{
 }
 .network .bi-battery-full{
     margin-left:.5em;
-    font-size:1.2rem;
+    font-size:1.3rem;
 }
 .quick-action{
   font-size: .7rem;
