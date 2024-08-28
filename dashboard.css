@@ -192,6 +192,9 @@ main{
 .network{
   font-size: 1.1rem;
 }
+.network .bi-battery-full{
+    margin-left:.4em;
+}
 .quick-action{
   font-size: .7rem;
   color: rgb(232, 229, 229);
