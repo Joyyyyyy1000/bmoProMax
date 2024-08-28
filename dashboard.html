@@ -32,7 +32,7 @@
                 <i class="bi bi-envelope fs-3 "></i>
             </div>
         </nav>
-        <p class="greeting fs-3 fw-lighter m-0">
+        <p id="greeting" class="greeting fs-3 fw-lighter m-0">
             Good morning, <span class="text-white fw-bold">Monalisa</span>
         </p>
         <div class="d-flex align-items-start mt-2">
@@ -147,17 +147,33 @@
 
 
     <script>
-        function updateTime() {
-            const clock = document.getElementById('clock');
-            const now = new Date();
-            const hours = String(now.getHours()).padStart(2, '0');
-            const minutes = String(now.getMinutes()).padStart(2, '0');
-            clock.textContent = `${hours}:${minutes}`;
+       function updateTime() {
+        const clock = document.getElementById('clock');
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+        clock.textContent = `${hours}:${minutes}:${seconds}`;
+    }
+
+    function updateGreeting() {
+        const greeting = document.getElementById('greeting');
+        const now = new Date();
+        const hours = now.getHours();
+
+        if (hours < 12) {
+            greeting.textContent = 'Good Morning!';
+        } else if (hours < 18) {
+            greeting.textContent = 'Good Afternoon!';
+        } else {
+            greeting.textContent = 'Good Evening!';
         }
-    
-        // Update the time immediately, and then every second
-        updateTime();
-        setInterval(updateTime, 1000);
+    }
+
+    // Initialize the greeting and time, then update the time every second
+    updateGreeting();
+    updateTime();
+    setInterval(updateTime, 1000);
     </script
     
 </body>
