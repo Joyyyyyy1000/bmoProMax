@@ -177,8 +177,8 @@ main{
 }
 .greeting{
   color: gainsboro;
-  font-size:2rem;
-  font-weight:300;
+  font-size:1.3rem;
+  font-weight:200;
 }
 .date{
   font-size: .7rem;
@@ -198,7 +198,7 @@ main{
     font-size:1.35rem;
 }
 .quick-action{
-  font-size: .7rem;
+  font-size: .6rem;
   color: rgb(232, 229, 229);
   font-weight: 400;
     margin-top:1.5em;
