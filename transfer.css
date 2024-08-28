@@ -94,14 +94,14 @@ body{
 }
 .limits p{
     margin: 0;
-    font-size: .7rem;
-    font-weight: 600;
+    font-size: .8rem;
+    font-weight: 500;
     color: rgb(110, 109, 109);
     line-height: 1.4;
 }
 .limits strong{
     color: rgb(38, 38, 38);
-    font-size:1rem;
+    font-size:.8rem;
 }
 .message-border{
     height: 40px;
